@@ -37,7 +37,7 @@ module.exports = {
           .setColor("#2F3136")
           .setURL(Member.user.displayAvatarURL({ size: 4096, dynamic: true }))
           .setThumbnail(Member.user.displayAvatarURL({ size: 4096, dynamic: true }))
-          .setAuthor(`Rquired By ${message.author.tag}`, message.author.displayAvatarURL({ size: 4096, dynamic: true }))
+          .setAuthor(`Required By ${message.author.tag}`, message.author.displayAvatarURL({ size: 4096, dynamic: true }))
           .setFooter(`Banner Of ${Member.user.tag} |`, Member.user.displayAvatarURL({ size: 4096, dynamic: true }))
 
         message.channel.send(embed, { components: [buttons()] })
